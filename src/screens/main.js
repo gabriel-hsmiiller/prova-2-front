@@ -41,7 +41,6 @@ class Main extends Component {
         const { form } = this.state;
 
         api.postEsporte(form).then((success) => {
-            console.log(success);
             this.getLista();
         }).catch((error) => {
             alert('Ocorreu um erro');
